@@ -69,6 +69,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'ternjs/tern_for_vim'
+Plugin 'tpope/vim-markdown'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
