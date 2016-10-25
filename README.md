@@ -2,7 +2,7 @@
 config files
 
 ## TMUX
-prefix: <C-j>
+prefix: `<C-j>`
 
 ```
  tmux new -s session_name
