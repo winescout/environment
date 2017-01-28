@@ -4,12 +4,6 @@ call pathogen#infect()
 :let mapleader = ","
 :imap jj <Esc>
 "nmap S :
-map <Leader>r :NERDTreeToggle<CR>
-map <Leader>f :CommandT<CR>
-map <C-s> :w<CR>
-map <Leader>q :q<cr>
-map <Leader>d :r !date<CR>
-
 "xnoremap <Leadcer>c <esc>:new | r ! ls<CR>
 
 "map <C-[> :resize -1<CR>
@@ -23,21 +17,17 @@ call pathogen#infect()
 :let mapleader = ","
 :imap jj <Esc>
 "nmap S :
-map <Leader>r :NERDTreeToggle<CR>
-map <Leader>f :CommandT<CR>
-map <C-s> :w<CR>
-map <Leader>q :q<cr>
-map <Leader>d :r !date<CR>
-"map <C-[> :resize -1<CR>
-"map <C-]> :resize +1<CR>
-"map <C-p> :vertical resize -1<CR>
-"map <C-\> :vertical resize +1<CR>
+noremap <Leader>r :NERDTreeToggle<CR>
+noremap <Leader>f :CommandT<CR>
+noremap <C-s> :w<CR>
+noremap <Leader>q :q<cr>
+noremap <Leader>d :r !date<CR>
 
-"map r <Left>
-"map t k
-"map h j
-"nnoremap <silent> <C-l> <C-w>l
-"nnoremap <silent> <C-r> <C-w>r
+"Run selected text through node, and paste output
+command RunSelected :0read|'<,'>!node
+xnoremap <Leader>ee :<C-U>RunSelected<CR>
+command RunSelectedLine :read|.!node
+noremap <Leader>el :RunSelectedLine<CR>
 
 set expandtab
 set shiftwidth=2
@@ -58,6 +48,28 @@ filetype plugin on    " Enable filetype-specific plugins
 autocmd BufRead,BufNewFile *.jbuilder set filetype=Ruby
 autocmd BufRead,BufNewFile *.jscad set filetype=javascript
 
+"Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_loc_list_height = 5
+let g:syntastic_auto_loc_list = 0
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['eslint']
+
+let g:syntastic_error_symbol = '❌'
+let g:syntastic_style_error_symbol = '⁉️'
+let g:syntastic_warning_symbol = '⚠️'
+let g:syntastic_style_warning_symbol = '💩'
+
+highlight link SyntasticErrorSign SignColumn
+highlight link SyntasticWarningSign SignColumn
+highlight link SyntasticStyleErrorSign SignColumn
+highlight link SyntasticStyleWarningSign SignColumn
+
 " markdown-preview settings
 " Turn spellcheck on for markdown files.
 autocmd BufNewFile,BufRead *.md set spell
@@ -76,6 +88,7 @@ call vundle#begin()
 call camelcasemotion#CreateMotionMappings('<leader>')
 
 " let Vundle manage Vundle, required
+" run :PluginInstall after updating
 Plugin 'gmarik/Vundle.vim'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'tyru/open-browser.vim'
