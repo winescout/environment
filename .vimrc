@@ -24,7 +24,7 @@ noremap <Leader>q :q<cr>
 noremap <Leader>d :r !date<CR>
 
 "Run selected text through node, and paste output
-command RunSelected :0read|'<,'>!node
+command RunSelected :'<,'>:w !node
 xnoremap <Leader>ee :<C-U>RunSelected<CR>
 command RunSelectedLine :read|.!node
 noremap <Leader>el :RunSelectedLine<CR>
@@ -53,6 +53,7 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
+let g:syntastic_disabled_filetypes=['html']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_loc_list_height = 5
 let g:syntastic_auto_loc_list = 0
@@ -89,20 +90,22 @@ call camelcasemotion#CreateMotionMappings('<leader>')
 
 " let Vundle manage Vundle, required
 " run :PluginInstall after updating
-Plugin 'gmarik/Vundle.vim'
-Plugin 'bkad/CamelCaseMotion'
-Plugin 'tyru/open-browser.vim'
-Plugin 'kannokanno/previm'
-Plugin 'ervandew/supertab'
-Plugin 'ternjs/tern_for_vim'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'burnettk/vim-angular'
-Plugin 'Townk/vim-autoclose'
 Plugin 'alvan/vim-closetag'
+Plugin 'bkad/CamelCaseMotion'
+Plugin 'burnettk/vim-angular'
+Plugin 'ervandew/supertab'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'jeetsukumaran/vim-buffergator'
-Plugin 'pangloss/vim-javascript'
+Plugin 'kannokanno/previm'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'mxw/vim-jsx'
-Plugin 'tpope/vim-markdown'
+Plugin 'pangloss/vim-javascript'
+Plugin 'reedes/vim-pencil'
+Plugin 'ternjs/tern_for_vim'
+Plugin 'Townk/vim-autoclose'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'tyru/open-browser.vim'
 
 
 call vundle#end()            " required
@@ -119,6 +122,15 @@ augroup END
 "map h j
 "nnoremap <silent> <C-l> <C-w>l
 "nnoremap <silent> <C-r> <C-w>r
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
+
+"Markdown Preview
+let vim_markdown_preview_github=1
 
 python from powerline.vim import setup as powerline_setup
 python powerline_setup()
