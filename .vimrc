@@ -3,20 +3,41 @@ call pathogen#infect()
 :colorscheme vividchalk
 :let mapleader = ","
 :imap jj <Esc>
-"nmap S :
-"xnoremap <Leadcer>c <esc>:new | r ! ls<CR>
 
-"map <C-[> :resize -1<CR>
-"map <C-]> :resize +1<CR>
-"map <C-p> :vertical resize -1<CR>
-"map <C-\> :vertical resize +1<CR>
-set shell=/bin/zsh
-set backspace=indent,eol,start
-call pathogen#infect()
-:colorscheme vividchalk
-:let mapleader = ","
-:imap jj <Esc>
-"nmap S :
+" FIND
+" set your path variable to current directory (from which you launched vim)
+" and to all directories under current directory recursively.
+" http://vim.wikia.com/wiki/Project_browsing_using_find
+set path+=**
+
+" TAB COMPLETION
+" :help wildmenu
+set wildmenu
+set wildmode=longest:full,full
+
+" TAGS
+" C-n and C-p autocomplete,  reads included/required files
+" TODO: bind this to file write :w to rebuild ctags - C-]
+command! MakeTags !ctags -R .
+
+" :edit netrw
+let g:netrow_banner=0 "disable banner
+let g:netrw_browse_split=4 "open in prior window
+let g:netrw_altv=1 "opensplits to the right
+let g:netrw_liststyle=3 "tree view
+let g:netrw_list_hide=netrw_gitignore#Hide()
+let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
+
+"read an empty HTML template and move to title
+" -1 chanes line by 1
+nnoremap ,html :-1read $HOME/.vim/templates/html.html<CR>3jwf>a
+
+"HELP
+" to find help in a mode i_ c_ v_
+" :helpgrep
+" :help
+
+
 noremap <Leader>r :NERDTreeToggle<CR>
 noremap <Leader>f :CommandT<CR>
 noremap <C-s> :w<CR>
@@ -24,9 +45,9 @@ noremap <Leader>q :q<cr>
 noremap <Leader>d :r !date<CR>
 
 "Run selected text through node, and paste output
-command RunSelected :'<,'>:w !node
+"command RunSelected :'<,'>:w !node
 xnoremap <Leader>ee :<C-U>RunSelected<CR>
-command RunSelectedLine :read|.!node
+"command RunSelectedLine :read|.!node
 noremap <Leader>el :RunSelectedLine<CR>
 
 set expandtab
@@ -106,6 +127,9 @@ Plugin 'ternjs/tern_for_vim'
 Plugin 'Townk/vim-autoclose'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tyru/open-browser.vim'
+
+"TMUX plugin messes me up though  C-j specifically
+"Plugin 'sjl/vitality.vim'
 
 
 call vundle#end()            " required
