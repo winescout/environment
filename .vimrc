@@ -66,6 +66,10 @@ let g:syntastic_style_error_symbol = '⁉️'
 let g:syntastic_warning_symbol = '⚠️'
 let g:syntastic_style_warning_symbol = '💩'
 
+"nerdcommenter
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+
 highlight link SyntasticErrorSign SignColumn
 highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
@@ -90,6 +94,7 @@ call camelcasemotion#CreateMotionMappings('<leader>')
 
 " let Vundle manage Vundle, required
 " run :PluginInstall after updating
+"
 Plugin 'alvan/vim-closetag'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'burnettk/vim-angular'
@@ -97,15 +102,33 @@ Plugin 'ervandew/supertab'
 Plugin 'gmarik/Vundle.vim'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'jtratner/vim-flavored-markdown'
 Plugin 'kannokanno/previm'
+Plugin 'kchmck/vim-coffee-script'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'mattn/webapi-vim'
 Plugin 'mxw/vim-jsx'
 Plugin 'pangloss/vim-javascript'
+Plugin 'qpkorr/vim-bufkill'
 Plugin 'reedes/vim-pencil'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'statianzo/vim-jade'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'Townk/vim-autoclose'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-vividchalk'
 Plugin 'tyru/open-browser.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'wincent/command-t'
+Plugin 'waylan/vim-markdown-extra-preview'
+Plugin 'yegappan/grep'
 
 
 call vundle#end()            " required
