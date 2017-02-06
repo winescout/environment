@@ -9,6 +9,7 @@ call pathogen#infect()
 " to find help in a mode i_ c_ v_
 " :helpgrep
 " :help
+" :b <tab> switch buffer
 
 
 " MAPPINGS -------------------------------------------------------------
@@ -29,6 +30,15 @@ noremap <Leader>el :RunSelectedLine<CR>
 " HTML file
 nnoremap ,html :-1read $HOME/.vim/templates/html.html<CR>3jwf>a
 
+" CSS
+nnoremap ,cssmed :-1read $HOME/.vim/templates/cssmed.css<CR>27ji
+
+" Markdown
+nnoremap ,mdimg : -1read $HOME/.vim/templates/mdimg<CR>2li
+nnoremap ,mdjs : -1read $HOME/.vim/templates/mdjs.md<CR>ji
+
+" REACT
+nnoremap ,comp : -1read $HOME/.vim/templates/comp.js<CR>
 
 " FILE TYPES ------------------------------------------------------------
 syntax enable         " Enable syntax highlighting
