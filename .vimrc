@@ -1,4 +1,5 @@
 set shell=/bin/zsh
+set clipboard=unnamed
 call pathogen#infect()
 :colorscheme vividchalk
 :let mapleader = ","
@@ -101,23 +102,36 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
 
+"" GIST-VIM
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+
 " NERDTREE
 let NERDTreeShowHidden=1
 
-" PENCIL
-Plugin 'reedes/vim-pencil'
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init()
-augroup END
+"" PENCIL
+"Plugin 'reedes/vim-pencil'
+"augroup pencil
+"  autocmd!
+"  autocmd FileType markdown,mkd call pencil#init()
+"  autocmd FileType text         call pencil#init()
+"augroup END
+set linebreak
+noremap <C-j> gj
+noremap <C-k> gk
+
+" RUBY-FOLD
+"Plugin 'vim-utils/vim-ruby-fold'
 
 " SYNTASTIC
+Plugin 'q0LoCo/syntastic'
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_disabled_filetypes=['html']
+let g:syntastic_enable_async = 0
+let g:syntastic_async_tmux_if_possible = 0
+"let g:syntastic_disabled_filetypes=['html']
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_loc_list_height = 5
 let g:syntastic_auto_loc_list = 0
@@ -131,16 +145,16 @@ let g:syntastic_warning_symbol = '⚠️'
 let g:syntastic_style_warning_symbol = '💩'
 
 highlight link SyntasticErrorSign SignColumn
-highlight link SyntasticWarningSign SignColumn
+"highlight link SyntasticWarningSign SignColumn
 highlight link SyntasticStyleErrorSign SignColumn
 highlight link SyntasticStyleWarningSign SignColumn
 
 " VIM-MARKDOWN
-Plugin 'plasticboy/vim-markdown'
-augroup markdown
-  au!
-  au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-augroup END
+Plugin 'tpope/vim-markdown'
+"augroup markdown
+  "au!
+  "au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
+"augroup END
 
 " VIM-MARKDOWN-PREVIEW
 Plugin 'JamshedVesuna/vim-markdown-preview'
@@ -149,6 +163,9 @@ autocmd BufNewFile,BufRead *.md set spell
 
 " Use Github flavored markdown 
 let vim_markdown_preview_github=1
+
+" VIM-POLYMER
+Plugin 'myw/vim-polymer'
 
 " VITALITY
 "TMUX plugin messes me up though  C-j specifically

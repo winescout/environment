@@ -1,0 +1,45 @@
+{
+  "browsers": [
+    {
+      "name": "chrome",
+      "re": {},
+      "type": "chrome",
+      "profile": "/Users/mclark/.config/browser-launcher2/chrome-57.0.2987.133_818036a96f58a",
+      "command": "/Applications/Google Chrome.app",
+      "version": "57.0.2987.133"
+    },
+    {
+      "name": "firefox",
+      "re": {},
+      "type": "firefox",
+      "profile": true,
+      "command": "/Applications/Firefox.app/Contents/MacOS/firefox-bin",
+      "version": "52.0.2"
+    },
+    {
+      "name": "phantomjs",
+      "re": {},
+      "type": "phantom",
+      "headless": true,
+      "profile": false,
+      "command": "phantomjs",
+      "version": "2.1.1"
+    },
+    {
+      "name": "safari",
+      "type": "safari",
+      "profile": false,
+      "command": "/Applications/Safari.app",
+      "version": "10.0.1"
+    },
+    {
+      "name": "opera",
+      "re": {},
+      "type": "opera",
+      "image": "opera.exe",
+      "profile": "/Users/mclark/.config/browser-launcher2/opera-43.0.2442.1165_de011945c81d2",
+      "command": "/Applications/Opera.app",
+      "version": "43.0.2442.1165"
+    }
+  ]
+}
