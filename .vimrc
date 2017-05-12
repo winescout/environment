@@ -12,7 +12,6 @@ call pathogen#infect()
 " :help
 " :b <tab> switch buffer
 
-
 " MAPPINGS -------------------------------------------------------------
 noremap <Leader>r :NERDTreeToggle<CR>
 noremap <Leader>f :CommandT<CR>
@@ -53,8 +52,6 @@ autocmd BufRead,BufNewFile *.jbuilder set filetype=Ruby
 " JAVASCRIPT
 autocmd BufRead,BufNewFile *.jscad set filetype=javascript
 
-" JSX
-let g:jsx_ext_required = 0
 
 
 " BUILT IN CONFIGURATION ---------------------------------------------------
@@ -101,12 +98,18 @@ call camelcasemotion#CreateMotionMappings('<leader>')
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" VIM-JSX
+Plugin 'mxw/vim-jsx'
+let g:jsx_ext_required = 0
 
 "" GIST-VIM
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 
 " NERDTREE
+Plugin 'scrooloose/nerdtree'
 let NERDTreeShowHidden=1
 
 "" PENCIL
@@ -124,30 +127,35 @@ noremap <C-k> gk
 "Plugin 'vim-utils/vim-ruby-fold'
 
 " SYNTASTIC
-Plugin 'q0LoCo/syntastic'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
+" Plugin 'q0LoCo/syntastic'
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
 
-let g:syntastic_enable_async = 0
-let g:syntastic_async_tmux_if_possible = 0
-"let g:syntastic_disabled_filetypes=['html']
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_loc_list_height = 5
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
-let g:syntastic_javascript_checkers = ['eslint']
+" let g:syntastic_enable_async = 0
+" let g:syntastic_async_tmux_if_possible = 0
+" "let g:syntastic_disabled_filetypes=['html']
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_loc_list_height = 5
+" let g:syntastic_auto_loc_list = 0
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 1
+" let g:syntastic_javascript_checkers = ['eslint']
 
-let g:syntastic_error_symbol = '❌'
-let g:syntastic_style_error_symbol = '⁉️'
-let g:syntastic_warning_symbol = '⚠️'
-let g:syntastic_style_warning_symbol = '💩'
+" let g:syntastic_error_symbol = '❌'
+" let g:syntastic_style_error_symbol = '⁉️'
+" let g:syntastic_warning_symbol = '⚠️'
+" let g:syntastic_style_warning_symbol = '💩'
 
-highlight link SyntasticErrorSign SignColumn
-"highlight link SyntasticWarningSign SignColumn
-highlight link SyntasticStyleErrorSign SignColumn
-highlight link SyntasticStyleWarningSign SignColumn
+"nerdcommenter
+" Plugin 'scrooloose/nerdcommenter'
+" let g:NERDSpaceDelims = 1
+" let g:NERDCompactSexyComs = 1
+
+" highlight link SyntasticErrorSign SignColumn
+" "highlight link SyntasticWarningSign SignColumn
+" highlight link SyntasticStyleErrorSign SignColumn
+" highlight link SyntasticStyleWarningSign SignColumn
 
 " VIM-MARKDOWN
 Plugin 'tpope/vim-markdown'
@@ -161,7 +169,9 @@ Plugin 'JamshedVesuna/vim-markdown-preview'
 " Turn spellcheck on for markdown files.
 autocmd BufNewFile,BufRead *.md set spell
 
+" VIM-FLAVORED-MARKDOWN
 " Use Github flavored markdown 
+Plugin 'jtratner/vim-flavored-markdown'
 let vim_markdown_preview_github=1
 
 " VIM-POLYMER
@@ -171,19 +181,31 @@ Plugin 'myw/vim-polymer'
 "TMUX plugin messes me up though  C-j specifically
 "Plugin 'sjl/vitality.vim'
 
+" let Vundle manage Vundle, required
+" run :PluginInstall after updating
+"
+
+Plugin 'Townk/vim-autoclose'
 Plugin 'alvan/vim-closetag'
 Plugin 'bkad/CamelCaseMotion'
 Plugin 'burnettk/vim-angular'
 Plugin 'ervandew/supertab'
-Plugin 'gmarik/Vundle.vim'
 Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'statianzo/vim-jade'
+Plugin 'qpkorr/vim-bufkill'
 Plugin 'kannokanno/previm'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'mxw/vim-jsx'
-Plugin 'pangloss/vim-javascript'
+Plugin 'kchmck/vim-coffee-script'
 Plugin 'ternjs/tern_for_vim'
-Plugin 'Townk/vim-autoclose'
+Plugin 'pangloss/vim-javascript'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-haml'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-vividchalk'
 Plugin 'tyru/open-browser.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'wincent/command-t'
+Plugin 'yegappan/grep'
 
 
 call vundle#end()            " required
