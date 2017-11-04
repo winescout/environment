@@ -1,7 +1,7 @@
 set shell=/bin/zsh
 set clipboard=unnamed
 call pathogen#infect()
-:colorscheme vividchalk
+":colorscheme vividchalk
 :let mapleader = ","
 :imap jj <Esc>
 
@@ -18,13 +18,13 @@ noremap <Leader>f :CommandT<CR>
 noremap <C-s> :w<CR>
 noremap <Leader>q :q<cr>
 noremap <Leader>d :r !date<CR>
+noremap <Leader>vr :vertical resize 
+noremap <Leader>hr :resize 
+noremap <leader>s :execute "noautocmd grep /\\<" . expand("<cword>") . "\\>/gj **/*.*" <Bar> cw<CR> 5
 
-"Run selected text through node, and paste output
-"command RunSelected :'<,'>:w !node
-xnoremap <Leader>ee :<C-U>RunSelected<CR>
-"command RunSelectedLine :read|.!node
-noremap <Leader>el :RunSelectedLine<CR>
-
+" CURSOR ---------------------------------------------------------------
+autocmd InsertEnter * : silent exec "!printf '\033]50;CursorShape=2\x7'" | exec ":redraw!"
+autocmd InsertLeave * : silent exec "!printf '\033]50;CursorShape=0\x7'" | exec ":redraw!"
 
 " TEMPLATES -----------------------------------------------------------
 " HTML file
@@ -58,8 +58,8 @@ autocmd BufRead,BufNewFile *.jscad set filetype=javascript
 set expandtab
 set shiftwidth=2
 set softtabstop=2
-" set relativenumber
-set number
+ set relativenumber
+"set number
 set nocompatible      " We're running Vim, not Vi!
 set smartcase         " ignorecase unless search with a capital
 
@@ -100,6 +100,9 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
+" WILDIGNORE
+set wildignore=*.swp,*.bak,*.pyc,*.class,*.jar,*.gif,*.png,*.jpg,node_modules,.git,ios,*.ttf,tmp
+
 " VIM-JSX
 Plugin 'mxw/vim-jsx'
 let g:jsx_ext_required = 0
@@ -110,7 +113,27 @@ Plugin 'mattn/gist-vim'
 
 " NERDTREE
 Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 let NERDTreeShowHidden=1
+
+function! NERDTreeHighlightFile(extension, fg, bg, guifg, guibg)
+ exec 'autocmd filetype nerdtree highlight ' . a:extension .' ctermbg='. a:bg .' ctermfg='. a:fg .' guibg='. a:guibg .' guifg='. a:guifg
+ exec 'autocmd filetype nerdtree syn match ' . a:extension .' #^\s\+.*'. a:extension .'$#'
+endfunction
+
+call NERDTreeHighlightFile('jade', 'green', 'none', 'green', '#151515')
+call NERDTreeHighlightFile('ini', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('md', 'blue', 'none', '#3366FF', '#151515')
+call NERDTreeHighlightFile('yml', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('config', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('conf', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('json', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('html', 'yellow', 'none', 'yellow', '#151515')
+call NERDTreeHighlightFile('styl', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('css', 'cyan', 'none', 'cyan', '#151515')
+call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
+call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
+call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
 "" PENCIL
 "Plugin 'reedes/vim-pencil'
@@ -168,6 +191,16 @@ Plugin 'tpope/vim-markdown'
 Plugin 'JamshedVesuna/vim-markdown-preview'
 " Turn spellcheck on for markdown files.
 autocmd BufNewFile,BufRead *.md set spell
+
+" SPELLING --------------------------------------------------------------
+ highlight clear SpellBad
+ highlight SpellBad term=standout ctermfg=1 term=underline cterm=underline
+ highlight clear SpellCap
+ highlight SpellCap term=underline cterm=underline
+ highlight clear SpellRare
+ highlight SpellRare term=underline cterm=underline
+ highlight clear SpellLocal
+ highlight SpellLocal term=underline cterm=underline
 
 " VIM-FLAVORED-MARKDOWN
 " Use Github flavored markdown 

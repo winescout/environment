@@ -1,9 +1,6 @@
-if (( ! ${fpath[(I)/usr/local/share/zsh/site-functions]} )); then
-    FPATH=/usr/local/share/zsh/site-functions:$FPATH
-fi
-
+                `${paths.appNodeModules}/react-native-image-picker` 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/mclark/.oh-my-zsh
@@ -12,7 +9,6 @@ export ZSH=/Users/mclark/.oh-my-zsh
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
-#ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -56,7 +52,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git) # hub ruby npm nvm rails bundler ember-cli jira osx)
+plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -89,17 +85,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cdn8="cd /Users/mclark/Projects/notch8/"
-alias cd3="cd /Users/mclark/Projects/3d-projects/"
 alias cdst="cd /Users/mclark/Projects/notch8/shoptab/fb_products"
-alias cdsd="cd /Users/mclark/Projects/notch8/sleep_data"
-alias cdsw="cd /Users/mclark/Projects/notch8/spendwell"
 alias cdle="cd /Users/mclark/Projects/notch8/learn/webapp"
-alias cdop="cd /Users/mclark/Projects/notch8/be-optimus/audience"
+alias cdtc="cd /Users/mclark/Projects/notch8/tctrac"
+alias cdmh="cd /Users/mclark/Projects/notch8/moishehouse"
 alias sshsts="ssh deploy@174.143.152.215"
 alias sshstp="ssh deploy@23.253.105.142"
 alias sshstb="ssh deploy@192.237.207.10"
 alias be="bundle exec "
 alias gb="git branch -avv"
+alias sc="stack_car "
+alias sce="stack_car exec "
+alias de="docker exec "
+alias ll="ls -lah"
+alias gmv="git mv"
 
 #git
 alias gcpc='git cherry-pick --continue'
@@ -107,12 +106,3 @@ alias gcpc='git cherry-pick --continue'
 #Ruby
 alias rake='noglob rake'
 
-#Mercurial
-alias hgc='find . -name \*.orig -delete'
-alias vimc='find . -name \*.swp -delete'
-
-
-eval "$(hub alias -s)"
-
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/id_rsa
