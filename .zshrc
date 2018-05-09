@@ -1,9 +1,17 @@
-                `${paths.appNodeModules}/react-native-image-picker` 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/mclark/.oh-my-zsh
+
+# Fastlane for app deployment
+export PATH="$HOME/.fastlane/bin:$PATH"
+
+# android build
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+export ANDROID_HOME=~/Library/Android/sdk
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -92,17 +100,20 @@ alias cdmh="cd /Users/mclark/Projects/notch8/moishehouse"
 alias sshsts="ssh deploy@174.143.152.215"
 alias sshstp="ssh deploy@23.253.105.142"
 alias sshstb="ssh deploy@192.237.207.10"
-alias be="bundle exec "
-alias gb="git branch -avv"
+alias ll="ls -lah"
+
+#docker
+alias dsa="docker stop $(docker ps -q)"
+alias de="docker exec "
 alias sc="stack_car "
 alias sce="stack_car exec "
-alias de="docker exec "
-alias ll="ls -lah"
-alias gmv="git mv"
 
 #git
 alias gcpc='git cherry-pick --continue'
+alias gmv="git mv"
+alias gb="git branch -avv"
 
 #Ruby
 alias rake='noglob rake'
+alias be="bundle exec "
 

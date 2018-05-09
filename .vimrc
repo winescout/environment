@@ -1,5 +1,7 @@
 set shell=/bin/zsh
-set clipboard=unnamed
+if $TMUX == ''
+  set clipboard=unnamed
+endif
 call pathogen#infect()
 ":colorscheme vividchalk
 :let mapleader = ","
@@ -22,10 +24,6 @@ noremap <Leader>vr :vertical resize
 noremap <Leader>hr :resize 
 noremap <leader>s :execute "noautocmd grep /\\<" . expand("<cword>") . "\\>/gj **/*.*" <Bar> cw<CR> 5
 
-" CURSOR ---------------------------------------------------------------
-autocmd InsertEnter * : silent exec "!printf '\033]50;CursorShape=2\x7'" | exec ":redraw!"
-autocmd InsertLeave * : silent exec "!printf '\033]50;CursorShape=0\x7'" | exec ":redraw!"
-
 " TEMPLATES -----------------------------------------------------------
 " HTML file
 nnoremap ,html :-1read $HOME/.vim/templates/html.html<CR>3jwf>a
@@ -39,6 +37,11 @@ nnoremap ,mdjs : -1read $HOME/.vim/templates/mdjs.md<CR>ji
 
 " REACT
 nnoremap ,comp : -1read $HOME/.vim/templates/comp.js<CR>
+nnoremap ,webpack : -1read $HOME/.vim/templates/webpack.js<CR>
+
+" SAMVERA CONF EXAMPLES
+nnoremap ,searchcomp : -1read $HOME/.vim/templates/samvera-search-component.js<CR>
+nnoremap ,livesearchcomp : -1read $HOME/.vim/templates/live_search_component.js<CR>
 
 " FILE TYPES ------------------------------------------------------------
 syntax enable         " Enable syntax highlighting
@@ -48,18 +51,18 @@ filetype plugin on    " Enable filetype-specific plugins
 
 " RUBY
 autocmd BufRead,BufNewFile *.jbuilder set filetype=Ruby
+autocmd BufRead,BufNewFile *.axlsx set filetype=Ruby
 
 " JAVASCRIPT
 autocmd BufRead,BufNewFile *.jscad set filetype=javascript
-
 
 
 " BUILT IN CONFIGURATION ---------------------------------------------------
 set expandtab
 set shiftwidth=2
 set softtabstop=2
- set relativenumber
-"set number
+"set relativenumber
+set number
 set nocompatible      " We're running Vim, not Vi!
 set smartcase         " ignorecase unless search with a capital
 
@@ -135,20 +138,6 @@ call NERDTreeHighlightFile('coffee', 'Red', 'none', 'red', '#151515')
 call NERDTreeHighlightFile('js', 'Red', 'none', '#ffa500', '#151515')
 call NERDTreeHighlightFile('php', 'Magenta', 'none', '#ff00ff', '#151515')
 
-"" PENCIL
-"Plugin 'reedes/vim-pencil'
-"augroup pencil
-"  autocmd!
-"  autocmd FileType markdown,mkd call pencil#init()
-"  autocmd FileType text         call pencil#init()
-"augroup END
-set linebreak
-noremap <C-j> gj
-noremap <C-k> gk
-
-" RUBY-FOLD
-"Plugin 'vim-utils/vim-ruby-fold'
-
 " SYNTASTIC
 " Plugin 'q0LoCo/syntastic'
 " set statusline+=%#warningmsg#
@@ -170,22 +159,20 @@ noremap <C-k> gk
 " let g:syntastic_warning_symbol = '⚠️'
 " let g:syntastic_style_warning_symbol = '💩'
 
-"nerdcommenter
-" Plugin 'scrooloose/nerdcommenter'
-" let g:NERDSpaceDelims = 1
-" let g:NERDCompactSexyComs = 1
-
 " highlight link SyntasticErrorSign SignColumn
 " "highlight link SyntasticWarningSign SignColumn
 " highlight link SyntasticStyleErrorSign SignColumn
 " highlight link SyntasticStyleWarningSign SignColumn
 
+"nerdcommenter
+Plugin 'scrooloose/nerdcommenter'
+let g:NERDSpaceDelims = 1
+let g:NERDCompactSexyComs = 1
+
+
+
 " VIM-MARKDOWN
 Plugin 'tpope/vim-markdown'
-"augroup markdown
-  "au!
-  "au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
-"augroup END
 
 " VIM-MARKDOWN-PREVIEW
 Plugin 'JamshedVesuna/vim-markdown-preview'
@@ -210,13 +197,6 @@ let vim_markdown_preview_github=1
 " VIM-POLYMER
 Plugin 'myw/vim-polymer'
 
-" VITALITY
-"TMUX plugin messes me up though  C-j specifically
-"Plugin 'sjl/vitality.vim'
-
-" let Vundle manage Vundle, required
-" run :PluginInstall after updating
-"
 
 Plugin 'Townk/vim-autoclose'
 Plugin 'alvan/vim-closetag'
