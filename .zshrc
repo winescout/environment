@@ -12,6 +12,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 export ANDROID_HOME=~/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home"
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -72,6 +73,7 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
+export EDITOR='vim'
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
@@ -93,6 +95,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cdn8="cd /Users/mclark/Projects/notch8/"
+alias cdl="cd /Users/mclark/Projects/notch8/curriculum/2018-foxtrot"
 alias cdst="cd /Users/mclark/Projects/notch8/shoptab/fb_products"
 alias cdle="cd /Users/mclark/Projects/notch8/learn/webapp"
 alias cdtc="cd /Users/mclark/Projects/notch8/tctrac"
@@ -101,19 +104,41 @@ alias sshsts="ssh deploy@174.143.152.215"
 alias sshstp="ssh deploy@23.253.105.142"
 alias sshstb="ssh deploy@192.237.207.10"
 alias ll="ls -lah"
+alias emacs="/usr/local/bin/emacs"
+alias gbv="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
 
 #docker
 alias dsa="docker stop $(docker ps -q)"
 alias de="docker exec "
 alias sc="stack_car "
 alias sce="stack_car exec "
+alias dls='docker ps'
+alias dstop='docker stop $(docker ps -aq)'
+alias dclean='docker ps -aq --no-trunc -f status=exited | xargs docker rm'
 
 #git
 alias gcpc='git cherry-pick --continue'
 alias gmv="git mv"
 alias gb="git branch -avv"
+alias gbd!="git branch -D"
 
 #Ruby
 alias rake='noglob rake'
 alias be="bundle exec "
 
+#Tmux
+alias tls='tmux ls'
+alias ta='tmux attach -t '
+alias tn='tmux new -s '
+
+#Organize mode in Atom
+alias gdo="git diff -- . ':(exclude)dev.org'"
+
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# heroku autocomplete setup
+HEROKU_AC_ZSH_SETUP_PATH=/Users/mclark/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
