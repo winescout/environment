@@ -1,0 +1,49 @@
+{
+  "_from": "https://www.atom.io/api/packages/language-rspec/versions/0.12.1/tarball",
+  "_id": "language-rspec@0.12.1",
+  "_inBundle": false,
+  "_integrity": "sha512-CnfTq/PQMFNeztf5CxCe2YjMpE05M2TlKAfSgJaalWCyYIrUiWqs3GTSGZKh1yKZnBlYdseaMo84sJUUa+1zkQ==",
+  "_location": "/language-rspec",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/language-rspec/versions/0.12.1/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/language-rspec/versions/0.12.1/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/language-rspec/versions/0.12.1/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/language-rspec/versions/0.12.1/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/language-rspec/versions/0.12.1/tarball",
+  "_shasum": "3cd07edbd872552101546236bb0f992a621df389",
+  "_spec": "https://www.atom.io/api/packages/language-rspec/versions/0.12.1/tarball",
+  "_where": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-1181120-29438-jr8wwk.v1rm",
+  "bugs": {
+    "url": "https://github.com/pauldruziak/language-rspec/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "RSpec language package for Atom",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/pauldruziak/language-rspec#readme",
+  "keywords": [
+    "rspec",
+    "spec",
+    "ruby",
+    "test",
+    "bdd"
+  ],
+  "license": "MIT",
+  "main": "./lib/language-rspec",
+  "name": "language-rspec",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauldruziak/language-rspec.git"
+  },
+  "version": "0.12.1"
+}

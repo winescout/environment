@@ -1,0 +1,116 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.js':
+ 'New React Native Class':
+   'prefix': '_rnc'
+   'body': """
+      import React, { Component } from 'react'
+      import {
+        StyleSheet,
+        Text,
+        View,
+      } from 'react-native'
+
+      import Theme from '../styles/Theme'
+
+      export default class $1 extends Component {
+        render() {
+          return(
+
+          )
+        }
+      }
+
+      const styles = StyleSheet.create({
+
+      })
+    """
+
+ 'New React Class':
+   'prefix': '_rc'
+   'body': """
+      import React, { Component } from 'react'
+      import ReactDOM from 'react-dom'
+
+      class $1 extends Component {
+        render() {
+          return(
+          )
+        }
+      }
+
+      export default $1
+    """
+  'Console Log':
+    'prefix': '_cl'
+    'body': "console.log('$1')"
+
+  'Add Style Import':
+    'prefix': '_ris'
+    'body': "import styles from './styles'"
+
+
+  'Import From React Native':
+    'prefix': '_rifrn'
+    'body': "import $1 from 'react-native'"
+
+'.source.organized':
+
+  'Generic Code block':
+    'prefix': '_ocb'
+    'body': """
+    ```$1
+    ```
+    ```result
+    ```
+    """
+
+  'Shell Code block':
+    'prefix': '_ocbs'
+    'body': """
+    ```shell
+    $1
+    ```
+    ```result
+    ```
+    """
+
+  'Bash Code block':
+    'prefix': '_ocbb'
+    'body': """
+    ```bash
+    $1
+    ```
+    ```result
+    ```
+    """
+
+  'Postgres Example Code block':
+    'prefix': '_ocpb'
+    'body': """
+    ```bash
+    psql -h localhost -U postgres -d example -c \"\"\"$1\"\"\"
+    ```
+    ```result
+    ```
+    """

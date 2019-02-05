@@ -1,0 +1,121 @@
+{
+  "_from": "https://www.atom.io/api/packages/linter-ruby/versions/1.3.0/tarball",
+  "_id": "linter-ruby@1.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-tnj+TbvAbbK3eV+JY753t6+JbNNSZj12NZhDOoeK4w7kgq1G/91Sw7Hwy/bpGundvhQIGttBU4FpMAWUiLv7uA==",
+  "_location": "/linter-ruby",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/linter-ruby/versions/1.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/linter-ruby/versions/1.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/linter-ruby/versions/1.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/linter-ruby/versions/1.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/linter-ruby/versions/1.3.0/tarball",
+  "_shasum": "3c3c68cbe3a5ea45a0e03d0b3875cedb693553fc",
+  "_spec": "https://www.atom.io/api/packages/linter-ruby/versions/1.3.0/tarball",
+  "_where": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-119026-29787-1ng7dxt.wkfp",
+  "activationHooks": [
+    "language-ruby:grammar-used",
+    "language-ruby-on-rails:grammar-used"
+  ],
+  "bugs": {
+    "url": "https://github.com/AtomLinter/linter-ruby/issues"
+  },
+  "bundleDependencies": false,
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "configSchema": {
+    "rubyExecutablePath": {
+      "type": "string",
+      "default": "ruby"
+    },
+    "ignoredExtensions": {
+      "type": "array",
+      "default": [
+        "erb",
+        "md"
+      ],
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "dependencies": {
+    "atom-linter": "^10.0.0",
+    "atom-package-deps": "^5.0.0"
+  },
+  "deprecated": false,
+  "description": "Lint Ruby on the fly, using ruby -wc",
+  "devDependencies": {
+    "@commitlint/cli": "^6.1.3",
+    "@commitlint/config-conventional": "^6.1.3",
+    "@commitlint/travis-cli": "^6.1.3",
+    "@semantic-release/apm-config": "^2.0.1",
+    "eslint": "^4.6.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "husky": "^0.14.3",
+    "jasmine-fix": "^1.3.1",
+    "semantic-release": "^15.1.7"
+  },
+  "engines": {
+    "atom": ">=1.4.0 <2.0.0"
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "global-require": "off",
+      "import/no-unresolved": [
+        "error",
+        {
+          "ignore": [
+            "atom"
+          ]
+        }
+      ]
+    },
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "globals": {
+      "atom": true
+    }
+  },
+  "homepage": "https://github.com/AtomLinter/linter-ruby#readme",
+  "license": "MIT",
+  "main": "./lib/main",
+  "name": "linter-ruby",
+  "package-deps": [
+    "linter:2.0.0"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "2.0.0": "provideLinter"
+      }
+    }
+  },
+  "release": {
+    "extends": "@semantic-release/apm-config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtomLinter/linter-ruby.git"
+  },
+  "scripts": {
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "lint": "eslint .",
+    "test": "apm test"
+  },
+  "version": "1.3.0"
+}

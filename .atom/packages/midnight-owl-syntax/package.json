@@ -1,0 +1,45 @@
+{
+  "_from": "https://www.atom.io/api/packages/midnight-owl-syntax/versions/0.1.0/tarball",
+  "_id": "midnight-owl-syntax@0.1.0",
+  "_inBundle": false,
+  "_integrity": "sha512-JzdZVwW/PihU4eHomRwJ1Qi7KN4b3fzm5/FHXFKFsqeaiIpabP8a0dAvHHJnbfaWuL9OcmXCqr2Xj8ZBsMzKPQ==",
+  "_location": "/midnight-owl-syntax",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/midnight-owl-syntax/versions/0.1.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/midnight-owl-syntax/versions/0.1.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/midnight-owl-syntax/versions/0.1.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/midnight-owl-syntax/versions/0.1.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/midnight-owl-syntax/versions/0.1.0/tarball",
+  "_shasum": "f3ff9762f8f4d36592d03a4865d938995380b0d3",
+  "_spec": "https://www.atom.io/api/packages/midnight-owl-syntax/versions/0.1.0/tarball",
+  "_where": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-119012-35938-1f3copz.gf0u",
+  "bugs": {
+    "url": "https://github.com/tobiasandersen/midnight-owl-syntax/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Adaption of Sarah Drasner's Night Owl VSCode theme for Atom",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/tobiasandersen/midnight-owl-syntax#readme",
+  "keywords": [
+    "syntax",
+    "theme"
+  ],
+  "license": "MIT",
+  "name": "midnight-owl-syntax",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobiasandersen/midnight-owl-syntax.git"
+  },
+  "theme": "syntax",
+  "version": "0.1.0"
+}

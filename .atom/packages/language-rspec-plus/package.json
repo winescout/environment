@@ -1,0 +1,79 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12628-1jz3mcs.jqf8ugnwmi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12628-1jz3mcs.jqf8ugnwmi/package.tgz",
+        "spec": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12628-1jz3mcs.jqf8ugnwmi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-11771-12628-1qubglx.wwjlvrt3xr"
+    ]
+  ],
+  "_from": "../d-11771-12628-1jz3mcs.jqf8ugnwmi/package.tgz",
+  "_id": "language-rspec-plus@0.1.1",
+  "_inCache": true,
+  "_location": "/language-rspec-plus",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12628-1jz3mcs.jqf8ugnwmi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12628-1jz3mcs.jqf8ugnwmi/package.tgz",
+    "spec": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12628-1jz3mcs.jqf8ugnwmi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11771-12628-1jz3mcs.jqf8ugnwmi/package.tgz",
+  "_shasum": "10cdb45bd88c160a26b908e4a7b6e39a46db7ca5",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12628-1jz3mcs.jqf8ugnwmi/package.tgz",
+  "_where": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-11771-12628-1qubglx.wwjlvrt3xr",
+  "bugs": {
+    "url": "https://github.com/berfarah/language-rspec-plus/issues"
+  },
+  "dependencies": {},
+  "description": "More complete RSpec language package for Atom with double quotes",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "homepage": "https://github.com/berfarah/language-rspec-plus#readme",
+  "keywords": [
+    "rspec",
+    "spec",
+    "ruby",
+    "test",
+    "bdd"
+  ],
+  "license": "MIT",
+  "main": "./lib/language-rspec",
+  "name": "language-rspec-plus",
+  "optionalDependencies": {},
+  "readme": "# RSpec language support in Atom\n\nAdds syntax highlighting and snippets to RSpec file in Atom.\n\nForked from https://github.com/paveldruzyak/language-rspec\n\nInfluenced by:\nhttps://github.com/SublimeText/RSpec\nhttps://github.com/kazshu/rspec-snippets\n\nContributions are greatly appreciated. Please fork this repository and open a\npull request to add snippets, make grammar tweaks, etc.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/berfarah/language-rspec-plus.git"
+  },
+  "version": "0.1.1",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".coffee": [
+        "lib/language-rspec.coffee"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

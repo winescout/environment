@@ -1,0 +1,70 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12772-1iaoesv.fy73bit3xr/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12772-1iaoesv.fy73bit3xr/package.tgz",
+        "spec": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12772-1iaoesv.fy73bit3xr/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-11771-12772-64w2ma.tymlgl23xr"
+    ]
+  ],
+  "_from": "../d-11771-12772-1iaoesv.fy73bit3xr/package.tgz",
+  "_id": "rspec-snippets@0.4.0",
+  "_inCache": true,
+  "_location": "/rspec-snippets",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12772-1iaoesv.fy73bit3xr/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12772-1iaoesv.fy73bit3xr/package.tgz",
+    "spec": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12772-1iaoesv.fy73bit3xr/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-11771-12772-1iaoesv.fy73bit3xr/package.tgz",
+  "_shasum": "5a9e49cc3f580a917851b70099ab57410ebc3f51",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/d-11771-12772-1iaoesv.fy73bit3xr/package.tgz",
+  "_where": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-11771-12772-64w2ma.tymlgl23xr",
+  "bugs": {
+    "url": "https://github.com/jonmagic/atom-rspec-snippets/issues"
+  },
+  "dependencies": {},
+  "description": "Rspec snippets in Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": "*",
+    "node": "*"
+  },
+  "homepage": "https://github.com/jonmagic/atom-rspec-snippets#readme",
+  "license": "MIT",
+  "name": "rspec-snippets",
+  "optionalDependencies": {},
+  "private": true,
+  "readme": "# Rspec snippets in Atom\n\nOriginally [converted](http://atom.io/docs/latest/converting-a-text-mate-bundle) from the [Rspec bundle](https://github.com/rspec/rspec-tmbundle).\n\nContributions are greatly appreciated. Please fork this repository and open a pull request to add snippets, make grammar tweaks, etc.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonmagic/atom-rspec-snippets.git"
+  },
+  "version": "0.4.0",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  }
+}

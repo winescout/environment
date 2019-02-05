@@ -1,0 +1,64 @@
+{
+  "_from": "https://www.atom.io/api/packages/autoreload-package-service/versions/0.0.4/tarball",
+  "_id": "autoreload-package-service@0.0.4",
+  "_inBundle": false,
+  "_integrity": "sha512-GcwuSeelU+6uiwowVfgaQHioAK7sNTl0VA6YdVHG7VP1x1O7mElET5CH4KnBDqfGTdGGidfqmWvdFQ4HlKXAzQ==",
+  "_location": "/autoreload-package-service",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/autoreload-package-service/versions/0.0.4/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/autoreload-package-service/versions/0.0.4/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/autoreload-package-service/versions/0.0.4/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/autoreload-package-service/versions/0.0.4/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/autoreload-package-service/versions/0.0.4/tarball",
+  "_shasum": "492b99329b14a2b0124c15dd5b0620fa8e4e1ae2",
+  "_spec": "https://www.atom.io/api/packages/autoreload-package-service/versions/0.0.4/tarball",
+  "_where": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-119014-15844-ai6hni.f9tu4",
+  "author": {
+    "name": "Paul Pflugradt",
+    "email": "paul.pflugradt@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/paulpflug/autoreload-package-service/issues"
+  },
+  "bundleDependencies": false,
+  "consumedServices": {
+    "debug": {
+      "versions": {
+        "^0.0.1": "consumeDebug"
+      }
+    }
+  },
+  "deprecated": false,
+  "description": "a reloader for atom packages",
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/paulpflug/",
+  "keywords": [
+    "atom",
+    "package",
+    "reloader"
+  ],
+  "main": "lib/autoreload-package-service",
+  "name": "autoreload-package-service",
+  "providedServices": {
+    "autoreload": {
+      "description": "autoreload in dev-mode",
+      "versions": {
+        "0.0.1": "provideAutoreload"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulpflug/autoreload-package-service.git"
+  },
+  "version": "0.0.4"
+}
