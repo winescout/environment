@@ -95,7 +95,7 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cdn8="cd /Users/mclark/Projects/notch8/"
-alias cdl="cd /Users/mclark/Projects/notch8/curriculum/2018-foxtrot"
+alias cdl="cd /Users/mclark/Projects/notch8/curriculum/2019-alpha"
 alias cdst="cd /Users/mclark/Projects/notch8/shoptab/fb_products"
 alias cdle="cd /Users/mclark/Projects/notch8/learn/webapp"
 alias cdtc="cd /Users/mclark/Projects/notch8/tctrac"
@@ -108,6 +108,7 @@ alias emacs="/usr/local/bin/emacs"
 alias gbv="git for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
 
 #docker
+alias dc="docker-compose"
 alias dsa="docker stop $(docker ps -q)"
 alias de="docker exec "
 alias sc="stack_car "

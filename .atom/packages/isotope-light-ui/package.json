@@ -1,0 +1,50 @@
+{
+  "_from": "https://www.atom.io/api/packages/isotope-light-ui/versions/2.3.0/tarball",
+  "_id": "isotope-light-ui@2.3.0",
+  "_inBundle": false,
+  "_integrity": "sha512-iIwbNqT6xNzPrFt1Qzh3VmI3l6GmihVBrkJLBNcZxFzzmXIdUrOALhH+MGpf2y/Y1c1SmBOA0piZnm7XhV10BQ==",
+  "_location": "/isotope-light-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/isotope-light-ui/versions/2.3.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/isotope-light-ui/versions/2.3.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/isotope-light-ui/versions/2.3.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/isotope-light-ui/versions/2.3.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/isotope-light-ui/versions/2.3.0/tarball",
+  "_shasum": "c062fc2ed32218d8ca144ed65106a3c797b8b7e2",
+  "_spec": "https://www.atom.io/api/packages/isotope-light-ui/versions/2.3.0/tarball",
+  "_where": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-119124-7819-15aqbo2.z14d",
+  "bugs": {
+    "url": "https://github.com/braver/isotope-light-ui/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "A clean and configurable light UI theme.",
+  "engines": {
+    "atom": ">=1.1.0 <2.0.0"
+  },
+  "homepage": "https://github.com/braver/isotope-light-ui#readme",
+  "keywords": [
+    "light",
+    "configurable",
+    "minimal",
+    "clean",
+    "compact",
+    "desaturated"
+  ],
+  "license": "MIT",
+  "main": "lib/isotope-light-ui",
+  "name": "isotope-light-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braver/isotope-light-ui.git"
+  },
+  "theme": "ui",
+  "version": "2.3.0"
+}

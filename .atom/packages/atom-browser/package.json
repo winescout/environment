@@ -1,0 +1,81 @@
+{
+  "providedServices": {
+    "atom-browser": {
+      "description": "Provides a web browser in Atom",
+      "versions": {
+        "1.0.0": "provideAtomBrowser"
+      }
+    }
+  },
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [],
+    "extensions": {
+      ".js": [
+        "lib\\atom-browser-view.js",
+        "lib\\atom-browser.js"
+      ],
+      ".json": [
+        "package.json"
+      ]
+    },
+    "folders": []
+  },
+  "_from": "https://www.atom.io/api/packages/atom-browser/versions/0.70.0/tarball",
+  "_id": "atom-browser@0.70.0",
+  "_inBundle": false,
+  "_integrity": "sha512-wzFMR3XN0ZeFbF25p/sWOgD2po29dzLZ5MyVT02aJ9iZk7uJzupt+sY4UwgmxzthpeA/YfplFRywHn7ibI9e7Q==",
+  "_location": "/atom-browser",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/atom-browser/versions/0.70.0/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/atom-browser/versions/0.70.0/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/atom-browser/versions/0.70.0/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/atom-browser/versions/0.70.0/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/atom-browser/versions/0.70.0/tarball",
+  "_shasum": "c1962b708d01a3bb4642ef34d610df8d5d9bf9d4",
+  "_spec": "https://www.atom.io/api/packages/atom-browser/versions/0.70.0/tarball",
+  "_where": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-119123-44906-s417f3.pceqi",
+  "bugs": {
+    "url": "https://github.com/sean-codes/atom-browser/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "viewShowBackground": {
+      "title": "Show Background",
+      "description": "The default background is dark grey. Enable this for white",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Atom-Browser is the plugin to browse the web, preview files, auto-reload, and search Google within Atom",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/sean-codes/atom-browser#readme",
+  "keywords": [
+    "browser",
+    "preview",
+    "live reload",
+    "web view",
+    "html preview"
+  ],
+  "license": "MIT",
+  "main": "./lib/atom-browser",
+  "name": "atom-browser",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sean-codes/atom-browser.git"
+  },
+  "version": "0.70.0"
+}

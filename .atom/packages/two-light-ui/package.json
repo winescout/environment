@@ -1,0 +1,50 @@
+{
+  "_from": "https://www.atom.io/api/packages/two-light-ui/versions/1.1.3/tarball",
+  "_id": "two-light-ui@1.1.3",
+  "_inBundle": false,
+  "_integrity": "sha512-oRkbzTjvU3/wyBnzzaEW2dUcd+Juti0YqWW0FvfzELw4K9EEqc2oD8ruLzVrHp1kcPkO3zWpMF0QQK37cFwAZA==",
+  "_location": "/two-light-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/two-light-ui/versions/1.1.3/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/two-light-ui/versions/1.1.3/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/two-light-ui/versions/1.1.3/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/two-light-ui/versions/1.1.3/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/two-light-ui/versions/1.1.3/tarball",
+  "_shasum": "f4a162d161ddd692ff3d58afa2ca42d4a494bbd3",
+  "_spec": "https://www.atom.io/api/packages/two-light-ui/versions/1.1.3/tarball",
+  "_where": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-119124-7858-12jhi5o.6ci1",
+  "bugs": {
+    "url": "https://github.com/emlai/two-light-ui/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Two light UI theme",
+  "devDependencies": {
+    "coffeelint": "^1.9.7"
+  },
+  "engines": {
+    "atom": ">0.40.0"
+  },
+  "homepage": "https://github.com/emlai/two-light-ui#readme",
+  "keywords": [
+    "light",
+    "adaptive",
+    "ui"
+  ],
+  "license": "MIT",
+  "main": "lib/main",
+  "name": "two-light-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emlai/two-light-ui.git"
+  },
+  "theme": "ui",
+  "version": "1.1.3"
+}

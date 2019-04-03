@@ -9,15 +9,17 @@
       "language-babel"
       "git-diff"
       "github"
+      "ask-stack"
+      "file-icons"
     ]
     telemetryConsent: "limited"
     themes: [
-      "atom-light-ui"
+      "isotope-light-ui"
       "atom-light-syntax"
     ]
   editor:
     fontFamily: "Monaco, Menlo, Consolas, DejaVu Sans Mono, monospace"
-    fontSize: 13
+    fontSize: 29
     showIndentGuide: true
     softWrap: true
     tabType: "soft"
@@ -32,6 +34,18 @@
     trustedFiles: [
       {
         hash: "06f003d9d276dc3a2c61aaaa7d22df4a45174b91"
+        trusted: true
+      }
+      {
+        hash: "9d0bc51a37636bb0034b40b4cf8bd13a404314fb"
+        trusted: true
+      }
+      {
+        hash: "bc15cc09c5f76918ec1caa768ac4ed556460c7d1"
+        trusted: true
+      }
+      {
+        hash: "8d6925e50a4d384e71b6502ebfebbc0ec60d4cb3"
         trusted: true
       }
     ]
@@ -67,8 +81,9 @@
       "ios"
       "android"
     ]
-    sortBy: "Path"
   "tree-view": {}
+  "two-light-ui":
+    layoutMode: "Spacious"
   "vim-mode-plus": {}
   welcome:
     showOnStartup: false

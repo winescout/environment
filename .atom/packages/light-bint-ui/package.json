@@ -1,0 +1,51 @@
+{
+  "_from": "https://www.atom.io/api/packages/light-bint-ui/versions/1.0.10/tarball",
+  "_id": "light-bint-ui@1.0.10",
+  "_inBundle": false,
+  "_integrity": "sha512-WaVY6fGl60EL6ozvS0STsvqkgbVlcOe1OfpyaQjKYiJipPHx+OIlQUo9dzm1DZvoj5rVwdFBNWuVcf5TekwxJw==",
+  "_location": "/light-bint-ui",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "remote",
+    "raw": "https://www.atom.io/api/packages/light-bint-ui/versions/1.0.10/tarball",
+    "rawSpec": "https://www.atom.io/api/packages/light-bint-ui/versions/1.0.10/tarball",
+    "saveSpec": "https://www.atom.io/api/packages/light-bint-ui/versions/1.0.10/tarball",
+    "fetchSpec": "https://www.atom.io/api/packages/light-bint-ui/versions/1.0.10/tarball"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://www.atom.io/api/packages/light-bint-ui/versions/1.0.10/tarball",
+  "_shasum": "de4fc2551bc081a60802217b4defac2e256edf61",
+  "_spec": "https://www.atom.io/api/packages/light-bint-ui/versions/1.0.10/tarball",
+  "_where": "/private/var/folders/5s/c069423j6vq805y8dz89bxlr0000gn/T/apm-install-dir-119124-7887-x8d836.6n54r",
+  "bugs": {
+    "url": "https://github.com/MiincGu/light-bint-ui/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Atom Light Bint UI theme",
+  "devDependencies": {
+    "coffeelint": "^1.9.7"
+  },
+  "engines": {
+    "atom": ">0.40.0"
+  },
+  "homepage": "https://github.com/MiincGu/light-bint-ui#readme",
+  "keywords": [
+    "light",
+    "adaptive",
+    "ui",
+    "bint"
+  ],
+  "license": "MIT",
+  "main": "lib/main",
+  "name": "light-bint-ui",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiincGu/light-bint-ui.git"
+  },
+  "theme": "ui",
+  "version": "1.0.10"
+}
