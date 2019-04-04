@@ -5,3 +5,13 @@
     homebrew:
       name: htop
       state: latest
+
+# github user/email
+# id_rsa
+# gitlab  id_rsa.pub
+# github id_rsa.pub
+#
+# Install Alfred
+# Add tgt workflow to Alfred
+#
+# Tmux
