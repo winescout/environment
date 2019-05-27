@@ -1,4 +1,7 @@
 set shell=/bin/zsh
+" filetype func off
+filetype off
+
 if $TMUX == ''
   set clipboard=unnamed
 endif
@@ -96,6 +99,7 @@ call camelcasemotion#CreateMotionMappings('<leader>')
 
 
 " PLUGINS ----------------------------------------------------------------
+"
 " run :PluginInstall after updating
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim

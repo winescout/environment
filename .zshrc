@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/mclark/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Fastlane for app deployment
 export PATH="$HOME/.fastlane/bin:$PATH"
@@ -17,7 +17,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Ho
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -94,12 +94,12 @@ export EDITOR='vim'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias cdn8="cd /Users/mclark/Projects/notch8/"
-alias cdl="cd /Users/mclark/Projects/notch8/curriculum/2019-alpha"
-alias cdst="cd /Users/mclark/Projects/notch8/shoptab/fb_products"
-alias cdle="cd /Users/mclark/Projects/notch8/learn/webapp"
-alias cdtc="cd /Users/mclark/Projects/notch8/tctrac"
-alias cdmh="cd /Users/mclark/Projects/notch8/moishehouse"
+alias cdn8="cd ~/Projects/notch8/"
+alias cdl="cd ~/Projects/notch8/curriculum/2019-alpha"
+alias cdst="cd ~/Projects/notch8/shoptab/fb_products"
+alias cdle="cd ~/Projects/notch8/learn/webapp"
+alias cdtc="cd ~/Projects/notch8/tctrac"
+alias cdmh="cd ~/Projects/notch8/moishehouse"
 alias sshsts="ssh deploy@174.143.152.215"
 alias sshstp="ssh deploy@23.253.105.142"
 alias sshstb="ssh deploy@192.237.207.10"
@@ -143,3 +143,4 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # heroku autocomplete setup
 HEROKU_AC_ZSH_SETUP_PATH=/Users/mclark/Library/Caches/heroku/autocomplete/zsh_setup && test -f $HEROKU_AC_ZSH_SETUP_PATH && source $HEROKU_AC_ZSH_SETUP_PATH;
+source /home/ubuntu/.zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
