@@ -1,4 +1,5 @@
 set shell=/bin/zsh
+set encoding=utf-8
 " filetype func off
 filetype off 
 if $TMUX == ''

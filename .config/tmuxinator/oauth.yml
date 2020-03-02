@@ -1,5 +1,5 @@
-name: skill
-root: ~/skillhorn
+name: oauth
+root: ~/oauth_example
 
 windows:
   - editor:
