@@ -1,0 +1,6 @@
+# Using Tmuxinator to create complex sessions
+# https://github.com/tmuxinator/tmuxinator
+
+
+bind | split-window -h -c "#{pane_current_path}"
+bind - split-window -v -c "#{pane_current_path}"

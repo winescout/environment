@@ -1,0 +1,51 @@
+[submodule ".vim/pack/javascript/start/vim-jsx-pretty"]
+	path = .vim/pack/javascript/start/vim-jsx-pretty
+	url = https://github.com/MaxMEllon/vim-jsx-pretty.git
+[submodule ".vim/pack/toos/start/grep"]
+	path = .vim/pack/tools/start/grep
+	url = https://github.com/yegappan/grep.git
+[submodule ".vim/pack/ruby/start/vim-ruby"]
+	path = .vim/pack/ruby/start/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule ".vim/pack/tools/start/vim-vividchalk"]
+	path = .vim/pack/tools/start/vim-vividchalk
+	url = https://github.com/tpope/vim-vividchalk
+[submodule ".vim/pack/tools/start/vim-sensible"]
+	path = .vim/pack/tools/start/vim-sensible
+	url = https://github.com/tpope/vim-sensible
+[submodule ".vim/pack/markdown/start/vim-flavored-markdown"]
+	path = .vim/pack/markdown/start/vim-flavored-markdown
+	url = https://github.com/jtratner/vim-flavored-markdown.git
+[submodule ".vim/pack/markdown/start/vim-markdown"]
+	path = .vim/pack/markdown/start/vim-markdown
+	url = https://github.com/tpope/vim-markdown.git
+[submodule ".vim/pack/markdown/start/vim-markdown-preview"]
+	path = .vim/pack/markdown/start/vim-markdown-preview
+	url = https://github.com/JamshedVesuna/vim-markdown-preview
+[submodule ".vim/pack/navigation/start/nerdtree"]
+	path = .vim/pack/navigation/start/nerdtree
+	url = https://github.com/preservim/nerdtree.git
+[submodule ".vim/pack/navigation/start/nerdtree-git-plugin"]
+	path = .vim/pack/navigation/start/nerdtree-git-plugin
+	url = https://github.com/Xuyuanp/nerdtree-git-plugin.git
+[submodule ".vim/pack/elixir/start/alchemist.vim"]
+	path = .vim/pack/elixir/start/alchemist.vim
+	url = https://github.com/slashmili/alchemist.vim.git
+[submodule ".vim/pack/elixir/start/vim-elixir"]
+	path = .vim/pack/elixir/start/vim-elixir
+	url = https://github.com/elixir-editors/vim-elixir.git
+[submodule ".vim/pack/tools/start/CamelCaseMotion"]
+	path = .vim/pack/tools/start/CamelCaseMotion
+	url = https://github.com/bkad/CamelCaseMotion.git
+[submodule ".vim/pack/tools/start/vim-bufkill"]
+	path = .vim/pack/tools/start/vim-bufkill
+	url = https://github.com/qpkorr/vim-bufkill.git
+[submodule ".vim/pack/elixir/start/alchemist.vim"]
+	path = .vim/pack/elixir/start/alchemist.vim
+	url = https://github.com/slashmili/alchemist.vim.git
+[submodule ".vim/pack/mclark/start/vim-elixir"]
+	path = .vim/pack/mclark/start/vim-elixir
+	url = https://github.com/elixir-editors/vim-elixir.git
+[submodule ".vim/pack/mclark/start/vim-vividchalk"]
+	path = .vim/pack/mclark/start/vim-vividchalk
+	url = https://github.com/tpope/vim-vividchalk.git
