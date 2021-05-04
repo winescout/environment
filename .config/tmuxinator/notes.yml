@@ -1,0 +1,8 @@
+name: notes
+root: ~/notes
+
+windows:
+  - wednesday-jukebox:
+      layout: 
+      panes:
+        - vim

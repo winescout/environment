@@ -4,6 +4,9 @@
 alias dmix="docker-compose exec web mix"
 alias diex="docker-compose exec web iex -S mix"
 
+#Microcontrollers
+alias lsusb="ls -al /dev/cu.*"
+
 # Alias from Tmuxinator
 # txs <session - from - config>
 
@@ -12,7 +15,7 @@ alias diex="docker-compose exec web iex -S mix"
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/pi/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -106,3 +109,13 @@ export EDITOR='vim'
 #
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+export IDF_PATH=$HOME/esp/esp-idf
+. $HOME/esp/esp-idf/export.sh
+
+export RSHELL_PORT=/dev/cu.usbserial-14440
+
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH"
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"

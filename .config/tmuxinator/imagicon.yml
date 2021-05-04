@@ -1,8 +1,0 @@
-name: imagicon
-root: ~/imagicon
-windows:
-  - vim:
-      layout: main-vertical
-      panes:
-          - vim lib/imagicon.ex
-

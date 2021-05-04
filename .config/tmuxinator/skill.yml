@@ -1,5 +1,5 @@
 name: skill
-root: ~/skillhorn
+root: ~/Desktop/skillhorn/api
 
 windows:
   - editor:
